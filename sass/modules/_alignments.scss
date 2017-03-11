@@ -1,0 +1,52 @@
+.aligncenter, .alignright, .alignleft {
+	clear: both;
+	@include center-block;
+}
+
+@media screen and (min-width: 800px) {
+	.alignleft {
+		display: inline;
+		float: left;
+		margin-right: 2em;
+		margin-left: -70px;
+		clear: none;
+
+		&.wp-caption {
+			max-width: 300px;
+		}
+	}
+
+	.alignright {
+		display: inline;
+		float: right;
+		margin-left: 2em;
+		margin-right: -70px;
+		clear: none;
+
+		&.wp-caption {
+			max-width: 300px;
+		}
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.alignleft {
+		margin-left: -150px;
+
+		&.wp-caption {
+			max-width: 400px;
+		}
+	}
+
+	.alignright {
+		margin-right: -150px;
+
+		&.wp-caption {
+			max-width: 400px;
+		}
+	}
+}
+
+
+
+

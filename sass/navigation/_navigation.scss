@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";
+
+
+.site-branding {
+	display: inline-block;
+	padding: 12px 20px;
+
+	.site-title {
+		margin: 0;
+		font-size: 30px;
+
+		a {
+			color: $color__text;
+			text-decoration: none;
+		}
+	}
+
+	.site-description {
+		margin: 0;
+		font-family: $font__heading;
+	}
+}
+

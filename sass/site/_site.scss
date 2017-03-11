@@ -1,0 +1,64 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+
+.site-content {
+	padding: 20px;
+}
+
+.site-main {
+	margin-bottom: 80px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #BBB;
+}
+
+.content-area {
+	max-width: 600px;
+	margin: 0 auto;
+
+	.entry-content {
+		margin-bottom: 32px;
+
+		p {
+			font-size: 18px;
+		}
+
+		p:first-child {
+			font-size: 22px;
+			font-family: $font__heading;
+			font-style: italic;
+		}
+	}
+
+	.entry-footer {
+		font-style: italic;
+		margin-bottom: 60px;
+
+		> span {
+			margin-right: 20px;
+		}
+	}
+
+	.entry-title {
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+
+	.entry-subtitle {
+		font-weight: 400;
+		margin-top:8px;
+	}
+
+	.entry-header {
+		margin-bottom: 20px;
+	}
+}
