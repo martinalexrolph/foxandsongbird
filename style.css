@@ -1,3 +1,4 @@
+@import "primary/woocommerce";
 /*!
  Theme Name: foxandsongbird
  Theme URI: http://underscores.me/
@@ -635,6 +636,9 @@ a:hover, a:active {
 .bypostauthor {
   display: block;
 }
+/*--------------------------------------------------------------
+ ## WooCommerce
+ --------------------------------------------------------------*/
 .site-content {
   padding: 20px;
 }
