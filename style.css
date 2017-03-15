@@ -639,6 +639,68 @@ a:hover, a:active {
 /*--------------------------------------------------------------
  ## WooCommerce
  --------------------------------------------------------------*/
+.woocommerce.woocommerce-page.single-product #page #content #container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.woocommerce.woocommerce-page.single-product #page #content #container .product.product-type-external .price {
+  display: none;
+}
+.woocommerce.woocommerce-page.single-product #page #content #container .button {
+  width: 100%;
+  text-align: center;
+}
+.woocommerce.woocommerce-page.single-product #page #content #container .product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.woocommerce.woocommerce-page.single-product #page #content #container .product .images {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;
+}
+.woocommerce.woocommerce-page.single-product #page #content #container .product .images img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 500px;
+}
+.woocommerce.woocommerce-page.single-product #page #content #container .product .summary {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;
+  flex-grow: 1;
+  margin-top: -12px;
+  margin-left: 32px;
+}
+@media screen and (max-width: 600px) {
+  .woocommerce.woocommerce-page.single-product #page #content #container .product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .woocommerce.woocommerce-page.single-product #page #content #container .product .images {
+    width: 100%;
+  }
+  .woocommerce.woocommerce-page.single-product #page #content #container .product .summary {
+    margin-left: 0;
+  }
+}
+.woocommerce.woocommerce-page #page #content #container .product.product-type-external .price {
+  display: none;
+}
+.woocommerce.woocommerce-page #page #content #container .products .product h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.woocommerce.woocommerce-page #page #content #container .button {
+  width: 100%;
+  text-align: center;
+}
 .site-content {
   padding: 20px;
 }
