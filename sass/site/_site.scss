@@ -37,7 +37,7 @@
 			font-size: 18px;
 		}
 
-		p:first-child {
+		p:first-child, p.as-first-child {
 			font-size: 22px;
 			font-family: $font__heading;
 			font-style: italic;

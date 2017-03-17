@@ -646,9 +646,6 @@ a:hover, a:active {
   margin: 0 auto;
   padding: 0;
 }
-.woocommerce.woocommerce-page.single-product #page #content #container .product.product-type-external .price {
-  display: none;
-}
 .woocommerce.woocommerce-page.single-product #page #content #container .button {
   width: 100%;
   text-align: center;
@@ -691,27 +688,20 @@ a:hover, a:active {
     margin-left: 0;
   }
 }
-.woocommerce.woocommerce-page #page #content #container .product.product-type-external .price {
-  display: none;
+.woocommerce.woocommerce-page #page #content #container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .woocommerce.woocommerce-page #page #content #container .products .product h3 {
   text-align: center;
   font-size: 22px;
 }
 .woocommerce.woocommerce-page #page #content #container .button {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 .woocommerce.woocommerce-page #page #content #container .product_meta {
   display: none;
-}
-.woocommerce.add_to_cart_inline {
-  position: relative;
-  height: 40px;
-}
-.woocommerce.add_to_cart_inline .button {
-  position: absolute;
-  left: 0;
 }
 .site-content {
   padding: 20px;
@@ -731,7 +721,7 @@ a:hover, a:active {
 .content-area .entry-content p {
   font-size: 18px;
 }
-.content-area .entry-content p:first-child {
+.content-area .entry-content p:first-child, .content-area .entry-content p.as-first-child {
   font-size: 22px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -839,4 +829,11 @@ embed, iframe, object {
 }
 .gallery-caption {
   display: block;
+}
+@media (min-width: 850px) {
+  article .wp-post-image {
+    width: 150%;
+    max-width: 150%;
+    margin-left: -25%;
+  }
 }

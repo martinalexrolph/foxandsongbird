@@ -4,10 +4,6 @@
 	margin: 0 auto;
 	padding: 0;
 
-	.product.product-type-external .price {
-		display: none;
-	}
-
 	.button {
 		width: 100%;
 		text-align: center;
@@ -58,9 +54,8 @@
 }
 
 .woocommerce.woocommerce-page #page #content #container {
-	.product.product-type-external .price {
-		display: none;
-	}
+	max-width: 1200px;
+	margin: 0 auto;
 
 	.products .product h3 {
 		text-align: center;
@@ -74,16 +69,6 @@
 
 	.product_meta {
 		display: none;
-	}
-}
-
-.woocommerce.add_to_cart_inline {
-	position: relative;
-	height: 40px;
-
-	.button {
-		position: absolute;
-		left: 0;
 	}
 }
 
