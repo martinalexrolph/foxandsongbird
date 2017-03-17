@@ -33,24 +33,19 @@ get_header(); ?>
 				    while ( $q->have_posts() ) {
 					    $q->the_post();   
 
-						echo "<p class=\"as-first-child\">This week's selection is curated by ";
+						echo "<p class=\"as-first-child\">This week's selection is curated by <a href=\"" . get_permalink() . "\">";
 						the_title();
-						echo ".</p>";?>
+						echo "</a>.</p>";?>
 			</div>
 
 
 			<?php
 			        	get_template_part( 'template-parts/content-no-title' );
+	    				the_post_thumbnail();
 			    	}
 			    	wp_reset_postdata();
 				}
 			?>
-
-
-
-
-			
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
