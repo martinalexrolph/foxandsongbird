@@ -17,13 +17,15 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<div class=" entry-content"><p>
+			<?php $page_for_posts_id = get_option('page_for_posts');
+			echo get_post_field( 'post_content', $page_for_posts_id ); ?>
+			</p></div>
+
 		<?php
 
-		$page_for_posts_id = get_option('page_for_posts');
-		echo get_post_field( 'post_content', $page_for_posts_id );
-		$align = "alignright";
-
-		if ( have_posts() ) :
+			$align = "alignright";
+			if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
