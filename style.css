@@ -357,7 +357,6 @@ textarea {
  --------------------------------------------------------------*/
 a {
   color: #444;
-  text-decoration: none;
 }
 a:hover, a:focus, a:active {
   color: #111;
@@ -386,6 +385,9 @@ a:hover, a:active {
 }
 .main-navigation .menu-toggle {
   display: none;
+}
+.main-navigation a {
+  text-decoration: none;
 }
 .main-navigation ul {
   list-style: none;
@@ -699,6 +701,14 @@ a:hover, a:active {
 .woocommerce.woocommerce-page #page #content #container .button {
   width: 100%;
   text-align: center;
+}
+.woocommerce.add_to_cart_inline {
+  position: relative;
+  height: 40px;
+}
+.woocommerce.add_to_cart_inline .button {
+  position: absolute;
+  left: 0;
 }
 .site-content {
   padding: 20px;

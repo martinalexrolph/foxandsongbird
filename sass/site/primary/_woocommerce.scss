@@ -72,3 +72,15 @@
 		text-align: center;
 	}
 }
+
+.woocommerce.add_to_cart_inline {
+	position: relative;
+	height: 40px;
+
+	.button {
+		position: absolute;
+		left: 0;
+	}
+}
+
+
