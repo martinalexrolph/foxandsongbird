@@ -699,8 +699,11 @@ a:hover, a:active {
   font-size: 22px;
 }
 .woocommerce.woocommerce-page #page #content #container .button {
-  width: 100%;
+  width: 50%;
   text-align: center;
+}
+.woocommerce.woocommerce-page #page #content #container .product_meta {
+  display: none;
 }
 .woocommerce.add_to_cart_inline {
   position: relative;
