@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if (has_post_thumbnail() and get_option( 'thumbnail_size_w' )>get_option( 'thumbnail_size_h' )): ?>
+	<?php if (has_post_thumbnail()): ?>
 	<div class="hero-image">
 		<?php the_post_thumbnail(); ?> 
 		<header class="entry-header">
