@@ -157,3 +157,5 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+define('WP_SCSS_ALWAYS_RECOMPILE', true);
+

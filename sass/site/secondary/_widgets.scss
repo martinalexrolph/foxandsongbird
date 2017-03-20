@@ -22,12 +22,19 @@
 		font-size: 20px;
 	}
 
-	ul {
+	ul, .widget-content {
 		flex-grow: 1;
 		margin-left: 32px;
 		padding-left: 0;
 		list-style: none;
 		font-family: $font__heading;
 		font-size: 20px;
+	}
+
+	#mc_embed_signup {
+		input.email, input.button {
+			width: 100%;
+			margin-bottom: 5px;
+		}
 	}
 }
