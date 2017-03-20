@@ -10,11 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if (has_post_thumbnail()): ?>
-	<div class="hero-image">
-		<?php the_post_thumbnail(); ?>
-	<?php endif ?>
 
+	<?php if (has_post_thumbnail() and get_option( 'thumbnail_size_w' )>get_option( 'thumbnail_size_h' )): ?>
+	<div class="hero-image">
+		<?php the_post_thumbnail(); ?> 
 		<header class="entry-header">
 			<?php
 			if ( is_single() ) :
@@ -29,11 +28,27 @@
 			</div><!-- .entry-meta -->
 			<?php
 			endif; ?>
-		</header><!-- .entry-header -->
-	
-	<?php if (has_post_thumbnail()): ?>
+		</header>
 	</div>
-	<?php endif ?> 
+	<?php else: ?>
+	<?php the_post_thumbnail("large"); ?>
+	<header class="entry-header">
+		<?php
+		if ( is_single() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+
+		if ( 'post' === get_post_type() ) : ?>
+		<div class="entry-meta">
+			<?php foxandsongbird_posted_on(); ?>
+		</div><!-- .entry-meta -->
+		<?php
+		endif; ?>
+	</header>
+	<?php endif ?>
+
 
 	<div class="entry-content">
 		<?php

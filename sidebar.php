@@ -15,9 +15,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <aside id="secondary" class="widget-area" role="complementary">
 	<section class="widget">
 		<h2 class="widget-title">Subscribe</h2>
-
 		<div class="widget-content">
-			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 				<form action="//foxandsongbird.us15.list-manage.com/subscribe/post?u=29d73b2db658c587180d0747d&amp;id=46c5ad1d15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll">
@@ -33,11 +31,9 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 				    </div>
 				</form>
 			</div>
-
-			<!--End mc_embed_signup-->
 		</div>
-
 	</section>
 
+	
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
