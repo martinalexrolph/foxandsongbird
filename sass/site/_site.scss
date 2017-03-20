@@ -66,4 +66,26 @@
 	.entry-header {
 		margin-bottom: 20px;
 	}
+
+	.hero-image {
+		position: relative;
+
+		img {
+			filter: brightness(95%);
+		}
+
+		.entry-header {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 30px;
+			text-align: left;
+			color: white;
+			text-shadow: 2px 2px 2px black, 2px 2px 10px black;
+		}
+	}
 }
+
+
+
+
