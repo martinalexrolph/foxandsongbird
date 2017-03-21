@@ -38,7 +38,7 @@ get_header(); ?>
 			/* Start the Loop */
 			while ( have_posts() ) : the_post(); ?>
 
-				<h2><a href="<?php the_permalink(); ?>">
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>">
 					<?php the_title(); ?>
 				</a></h2>
 
