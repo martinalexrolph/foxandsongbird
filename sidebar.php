@@ -40,6 +40,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 	<section class="widget">
 		<h2>Share</h2>
-		<div class="addthis_inline_share_toolbox"></div>
+		<div class="widget-content">
+			<div class="addthis_inline_share_toolbox"></div>
+		</div>
 	</section>
 </aside><!-- #secondary -->
