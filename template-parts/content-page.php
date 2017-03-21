@@ -11,18 +11,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<?php if (has_post_thumbnail() and get_option( 'thumbnail_size_w' )>get_option( 'thumbnail_size_h' )): ?>
+	<?php if (has_post_thumbnail()): ?>
 	<div class="hero-image">
-		<?php the_post_thumbnail(); ?> 
+		<?php the_post_thumbnail(); ?>
+	<?php endif ?>
+
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header>
+
+	<?php if (has_post_thumbnail()): ?>
 	</div>
-	<?php else: ?>
-	<?php the_post_thumbnail("large"); ?>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header>
 	<?php endif ?>
 
 	<div class="entry-content">
