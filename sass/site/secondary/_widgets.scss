@@ -32,9 +32,73 @@
 	}
 
 	#mc_embed_signup {
+		width: 100%;
 		input.email, input.button {
 			width: 100%;
 			margin-bottom: 5px;
 		}
 	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	#content {
+		padding-right: 270px;
+	}
+
+	#masthead {
+		padding-right: 250px;
+
+		.site-branding {
+			padding-left: 0;
+		}
+
+		.site-navigation {
+			padding-right: 0;
+		}
+	}
+
+	.header-content-area {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.widget-area {
+		margin: 0;
+		position: fixed;
+		width: 250px;
+		height: 100%;
+		background: #f9f9f9;
+		overflow: scroll;
+		top: 0;
+		right: 0;
+		padding: 20px;
+	}
+
+	.widget {
+		flex-direction: column;
+
+		h2 {
+			width: 100%;
+			font-size: 16px;
+			margin-bottom: 3px;
+			font-weight: 500;
+		}
+
+		ul, .widget-content {
+			width: 100%;
+			margin-left: 0;
+			font-size: 14px;
+			font-family: $font__main;
+
+			a {
+				text-decoration: none;
+
+				&:hover, &:active, &:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
 }
