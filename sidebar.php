@@ -16,6 +16,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
 	<section class="widget">
+		<h2>F&amp;S in your inbox</h2>
 		<div id="mc_embed_signup">
 			<form action="//foxandsongbird.us15.list-manage.com/subscribe/post?u=29d73b2db658c587180d0747d&amp;id=46c5ad1d15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
@@ -31,5 +32,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			    </div>
 			</form>
 		</div>
+	</section>
+
+	<section class="widget">
+		<h2>Share</h2>
+		<div class="addthis_inline_share_toolbox"></div>
 	</section>
 </aside><!-- #secondary -->
